@@ -20,9 +20,9 @@ body {
     border-top: 6px solid #4A709C; /* آبی داستی */
 }
 
-/* عنوان اصلی H1 */
-h1.big-text {
-    color: #4A709C; /* هماهنگ با آبی داستی */
+/* عنوان اصلی H1 با رنگ شرابی تیره سفارشی */
+h1.big-text.title-dark {
+    color: #6A1B29 !important; /* شرابی تیره */
     text-align: center;
     margin-bottom: 5px;
 }
@@ -32,7 +32,7 @@ h1.big-text {
     text-align: center;
     border: none;
     margin-top: 0;
-    color: #6A1B29; /* شرابی تیره */
+    color: #4A709C; /* آبی داستی */
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -46,9 +46,10 @@ h2 {
     font-size: 1.2rem;
 }
 
-/* پاراگراف‌ها و متن‌های عادی */
+/* پاراگراف‌ها و لیست‌ها */
 p, li {
     color: #6A1B29;
+    margin-bottom: 8px;
 }
 
 /* لینک‌ها */
@@ -63,7 +64,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* باکس مشخصات */
+/* باکس مشخصات تماس */
 dl {
     background: #f0f4f8;
     padding: 15px;
@@ -71,7 +72,6 @@ dl {
     border-right: 4px solid #4A709C; 
 }
 
-/* برچسب‌های مشخصات */
 dt {
     font-weight: bold;
     color: #6A1B29; 
@@ -84,7 +84,7 @@ dd {
     margin-bottom: 10px;
 }
 
-/* فقط برای اعداد و شماره تلفنی که کلاس phone-number دارند */
+/* اعداد و شماره تلفن با رنگ آبی داستی */
 .phone-number {
     color: #4A709C; /* آبی داستی */
     font-weight: bold;
@@ -120,7 +120,6 @@ form {
     margin-top: 15px;
 }
 
-/* برچسب‌های فرم */
 label {
     font-weight: bold;
     font-size: 0.9rem;
