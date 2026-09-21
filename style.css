@@ -1,0 +1,65 @@
+/* تنظیمات کلی صفحه و مرکزچین کردن کارت */
+body {
+    background-color: #f4f4f6;
+    font-family: Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* کارتِ وسط صفحه با حاشیه شرابی تیره */
+.card {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(74, 23, 40, 0.08);
+    text-align: center;
+    width: 320px; /* سایز استاندارد و شکیل برای کارت */
+    border-top: 4px solid #5B1E31; /* شرابی تیره */
+}
+
+/* عنوان سلام */
+.card h1 {
+    color: #5B1E31; /* شرابی تیره */
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+/* زیرتیتر مهندسی */
+.subtitle {
+    color: #3B5363; /* آبی کثیف */
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+/* متن اصلی معرفی */
+.card p {
+    color: #555555;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: center; /* متن وسط‌چین باشد برای این قالب زیباتر است */
+    margin-bottom: 0;
+}
+
+/* دکمه ارتباط */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 22px;
+    background-color: #4A6B82; /* آبی کثیف */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+/* حالت هاور (رفتن موس روی) دکمه */
+.btn:hover {
+    background-color: #5B1E31; /* شرابی تیره */
+}
