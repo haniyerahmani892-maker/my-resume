@@ -1,63 +1,106 @@
-:root {
-    --dusty-blue: #7393B3;
-    --dark-burgundy: #58111A;
-    --bg-color: #f7f9fc;
-    --text-color: #2c3e50;
-}
-
+/* تنظیمات کلی صفحه */
 body {
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: Tahoma, sans-serif;
+    background-color: #f7f9fc;
+    color: #333333;
     line-height: 1.8;
-    background-color: var(--bg-color);
-    color: var(--text-color);
     margin: 0;
     padding: 20px;
+    direction: rtl;
 }
 
+/* کادر اصلی رزومه */
 .container {
     max-width: 800px;
     margin: 0 auto;
-    background: #fff;
+    background: #ffffff;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(88, 17, 26, 0.08);
-    border-top: 5px solid var(--dark-burgundy);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-h1 {
-    color: var(--dark-burgundy);
-    border-bottom: 2px solid var(--dusty-blue);
-    padding-bottom: 10px;
+/* نام و عنوان اصلی (استفاده از شرابی تیره) */
+h1.big-text {
+    color: #6A1B29; /* شرابی تیره */
+    text-align: center;
     margin-bottom: 5px;
 }
 
 h2 {
-    color: var(--dark-burgundy);
-    margin-top: 25px;
-    font-size: 1.3rem;
-    border-right: 4px solid var(--dusty-blue);
-    padding-right: 10px;
+    color: #6A1B29; /* شرابی تیره */
+    border-bottom: 2px solid #6A1B29;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-size: 1.2rem;
 }
 
-p {
-    text-align: justify;
-}
-
-.social-links {
-    margin-top: 20px;
-}
-
-.social-links a {
-    display: inline-block;
-    background-color: var(--dusty-blue);
-    color: white;
-    padding: 10px 20px;
+/* لینک‌ها */
+a {
+    color: #4A709C; /* آبی داستی */
     text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    font-weight: bold;
 }
 
-.social-links a:hover {
-    background-color: var(--dark-burgundy);
+a:hover {
+    text-decoration: underline;
+}
+
+/* جدول تحصیلات */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: right;
+}
+
+th {
+    background-color: #4A709C; /* آبی داستی */
+    color: #ffffff;
+}
+
+/* فرم تماس */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Tahoma, sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4A709C; /* آبی داستی هنگام کلیک */
+}
+
+button[type="submit"] {
+    background-color: #6A1B29; /* شرابی تیره برای دکمه ارسال */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #52131f;
 }
