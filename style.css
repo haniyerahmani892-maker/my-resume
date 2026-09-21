@@ -1,65 +1,227 @@
-/* تنظیمات کلی صفحه و مرکزچین کردن کارت */
+/* تنظیمات پایه و فونت */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #f4f4f6;
-    font-family: Tahoma, sans-serif;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #2c3e50;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+/* کانتینر اصلی رزومه */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* هدر صفحه */
+.header {
+    text-align: center;
+    border-bottom: 3px solid #4a6fa5;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.big-text {
+    font-size: 2.2rem;
+    color: #2b3a67;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    color: #6c757d;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.contact-info {
     display: flex;
     justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    color: #4a6fa5;
+    margin-left: 5px;
+}
+
+/* استایل لینک‌های شبکه‌های اجتماعی */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-flex;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-/* کارتِ وسط صفحه با حاشیه شرابی تیره */
-.card {
-    background-color: #ffffff;
-    padding: 35px 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(74, 23, 40, 0.08);
-    text-align: center;
-    width: 320px; /* سایز استاندارد و شکیل برای کارت */
-    border-top: 4px solid #5B1E31; /* شرابی تیره */
-}
-
-/* عنوان سلام */
-.card h1 {
-    color: #5B1E31; /* شرابی تیره */
-    margin-bottom: 8px;
-    font-size: 22px;
-}
-
-/* زیرتیتر مهندسی */
-.subtitle {
-    color: #3B5363; /* آبی کثیف */
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 18px;
-    letter-spacing: 0.5px;
-}
-
-/* متن اصلی معرفی */
-.card p {
-    color: #555555;
-    font-size: 13px;
-    line-height: 1.8;
-    text-align: center; /* متن وسط‌چین باشد برای این قالب زیباتر است */
-    margin-bottom: 0;
-}
-
-/* دکمه ارتباط */
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 10px 22px;
-    background-color: #4A6B82; /* آبی کثیف */
-    color: #ffffff;
+    gap: 8px;
+    background-color: #2b3a67;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
     text-decoration: none;
-    border-radius: 8px;
-    font-size: 13.5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-/* حالت هاور (رفتن موس روی) دکمه */
-.btn:hover {
-    background-color: #5B1E31; /* شرابی تیره */
+.social-links a:hover {
+    background-color: #4a6fa5;
+    transform: translateY(-2px);
+}
+
+/* استایل بخش‌ها */
+.section {
+    margin-bottom: 35px;
+}
+
+.section h2 {
+    font-size: 1.3rem;
+    color: #2b3a67;
+    border-right: 4px solid #4a6fa5;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    color: #495057;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* مهارت‌ها */
+.skills-list {
+    list-style: none;
+}
+
+.skills-list li {
+    margin-bottom: 15px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.skill-level {
+    font-size: 0.85rem;
+    color: #6c757d;
+    font-weight: normal;
+}
+
+.progress-bar {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #4a6fa5;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* جدول تحصیلات */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: right;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px 15px;
+}
+
+th {
+    background-color: #4a6fa5;
+    color: white;
+    font-weight: normal;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* لیست پروژه‌ها */
+.projects-list {
+    padding-right: 20px;
+    color: #495057;
+}
+
+.projects-list li {
+    margin-bottom: 10px;
+}
+
+/* فرم تماس */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #495057;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4a6fa5;
+    box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.15);
+}
+
+.submit-btn {
+    background-color: #2b3a67;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: Tahoma, Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #4a6fa5;
 }
