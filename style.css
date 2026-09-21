@@ -1,8 +1,8 @@
 /* تنظیمات کلی صفحه */
 body {
     font-family: Tahoma, sans-serif;
-    background-color: #f7f9fc;
-    color: #333333;
+    background-color: #f4f6f9;
+    color: #6A1B29; /* شرابی تیره برای متن‌های عمومی */
     line-height: 1.8;
     margin: 0;
     padding: 20px;
@@ -17,31 +17,71 @@ body {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 6px solid #4A709C; /* آبی داستی */
 }
 
-/* نام و عنوان اصلی (استفاده از شرابی تیره) */
+/* عنوان اصلی H1 (آبی داستی) */
 h1.big-text {
-    color: #6A1B29; /* شرابی تیره */
+    color: #4A709C; 
     text-align: center;
     margin-bottom: 5px;
 }
 
-h2 {
+/* زیرنویس عنوان */
+.subtitle {
+    text-align: center;
+    border: none;
+    margin-top: 0;
     color: #6A1B29; /* شرابی تیره */
-    border-bottom: 2px solid #6A1B29;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* سربرگ‌ها و موضوعات H2 (آبی داستی) */
+h2 {
+    color: #4A709C; 
+    border-bottom: 2px solid #6A1B29; /* شرابی تیره */
     padding-bottom: 5px;
     margin-top: 30px;
     font-size: 1.2rem;
+}
+
+/* پاراگراف‌ها و متن‌های عادی (شرابی تیره) */
+p, li {
+    color: #6A1B29;
 }
 
 /* لینک‌ها */
 a {
     color: #4A709C; /* آبی داستی */
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
+    color: #6A1B29;
     text-decoration: underline;
+}
+
+/* باکس مشخصات */
+dl {
+    background: #f0f4f8;
+    padding: 15px;
+    border-radius: 8px;
+    border-right: 4px solid #4A709C; 
+}
+
+/* زیرمجموعه‌ها و برچسب‌های مشخصات (شرابی تیره) */
+dt {
+    font-weight: bold;
+    color: #6A1B29; 
+    margin-top: 5px;
+}
+
+dd {
+    color: #6A1B29;
+    margin-right: 0;
+    margin-bottom: 10px;
 }
 
 /* جدول تحصیلات */
@@ -52,16 +92,17 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #dcdcdc;
 }
 
 th, td {
     padding: 10px;
     text-align: right;
+    color: #6A1B29; /* زیرمجموعه‌های جدول شرابی تیره */
 }
 
 th {
-    background-color: #4A709C; /* آبی داستی */
+    background-color: #4A709C; /* هدر جدول آبی داستی */
     color: #ffffff;
 }
 
@@ -73,9 +114,11 @@ form {
     margin-top: 15px;
 }
 
+/* برچسب‌های فرم (شرابی تیره) */
 label {
     font-weight: bold;
     font-size: 0.9rem;
+    color: #6A1B29; 
 }
 
 input, textarea {
@@ -83,15 +126,18 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-family: Tahoma, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    color: #6A1B29;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #4A709C; /* آبی داستی هنگام کلیک */
+    border-color: #4A709C; 
 }
 
 button[type="submit"] {
-    background-color: #6A1B29; /* شرابی تیره برای دکمه ارسال */
+    background-color: #4A709C; /* دکمه ارسال آبی داستی */
     color: white;
     padding: 12px;
     border: none;
@@ -102,5 +148,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #52131f;
+    background-color: #3b5a7d;
 }
