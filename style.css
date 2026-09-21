@@ -1,8 +1,8 @@
 /* تنظیمات کلی صفحه */
 body {
     font-family: Tahoma, sans-serif;
-    background-color: #f4f6f9;
-    color: #6A1B29; /* شرابی تیره برای متن‌های عمومی */
+    background-color: #f4f8f4; /* پس‌زمینه ملایم و هماهنگ */
+    color: #333333; /* رنگ متن عمومی تیره و خوانا */
     line-height: 1.8;
     margin: 0;
     padding: 20px;
@@ -17,12 +17,12 @@ body {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    border-top: 6px solid #4A709C; /* آبی داستی */
+    border-top: 6px solid #87A96B; /* سبز پاستیلی سازمانی */
 }
 
-/* عنوان اصلی H1 (آبی داستی) */
+/* عنوان اصلی H1 (سبز پاستیلی) */
 h1.big-text {
-    color: #4A709C; 
+    color: #87A96B; 
     text-align: center;
     margin-bottom: 5px;
 }
@@ -32,56 +32,62 @@ h1.big-text {
     text-align: center;
     border: none;
     margin-top: 0;
-    color: #6A1B29; /* شرابی تیره */
+    color: #555555;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-/* سربرگ‌ها و موضوعات H2 (آبی داستی) */
+/* سربرگ‌ها و موضوعات H2 (سبز پاستیلی) */
 h2 {
-    color: #4A709C; 
-    border-bottom: 2px solid #6A1B29; /* شرابی تیره */
+    color: #87A96B; 
+    border-bottom: 2px solid #87A96B; /* خط زیرین با سبز پاستیلی */
     padding-bottom: 5px;
     margin-top: 30px;
     font-size: 1.2rem;
 }
 
-/* پاراگراف‌ها و متن‌های عادی (شرابی تیره) */
+/* پاراگراف‌ها و متن‌های عادی */
 p, li {
-    color: #6A1B29;
+    color: #444444;
 }
 
 /* لینک‌ها */
 a {
-    color: #4A709C; /* آبی داستی */
+    color: #87A96B; /* سبز پاستیلی */
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #6A1B29;
+    color: #638249;
     text-decoration: underline;
 }
 
 /* باکس مشخصات */
 dl {
-    background: #f0f4f8;
+    background: #f0f7f0;
     padding: 15px;
     border-radius: 8px;
-    border-right: 4px solid #4A709C; 
+    border-right: 4px solid #87A96B; 
 }
 
-/* زیرمجموعه‌ها و برچسب‌های مشخصات (شرابی تیره) */
+/* برچسب‌های مشخصات */
 dt {
     font-weight: bold;
-    color: #6A1B29; 
+    color: #2c4a2c; 
     margin-top: 5px;
 }
 
 dd {
-    color: #6A1B29;
+    color: #444444;
     margin-right: 0;
     margin-bottom: 10px;
+}
+
+/* استایل اختصاصی برای شماره تلفن با رنگ سبز پاستیلی */
+.phone-number {
+    color: #87A96B; 
+    font-weight: bold;
 }
 
 /* جدول تحصیلات */
@@ -98,11 +104,11 @@ table, th, td {
 th, td {
     padding: 10px;
     text-align: right;
-    color: #6A1B29; /* زیرمجموعه‌های جدول شرابی تیره */
+    color: #444444;
 }
 
 th {
-    background-color: #4A709C; /* هدر جدول آبی داستی */
+    background-color: #87A96B; /* هدر جدول سبز پاستیلی */
     color: #ffffff;
 }
 
@@ -114,11 +120,11 @@ form {
     margin-top: 15px;
 }
 
-/* برچسب‌های فرم (شرابی تیره) */
+/* برچسب‌های فرم */
 label {
     font-weight: bold;
     font-size: 0.9rem;
-    color: #6A1B29; 
+    color: #2c4a2c; 
 }
 
 input, textarea {
@@ -128,16 +134,16 @@ input, textarea {
     font-family: Tahoma, sans-serif;
     width: 100%;
     box-sizing: border-box;
-    color: #6A1B29;
+    color: #333333;
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #4A709C; 
+    border-color: #87A96B; 
 }
 
 button[type="submit"] {
-    background-color: #4A709C; /* دکمه ارسال آبی داستی */
+    background-color: #87A96B; /* دکمه ارسال سبز پاستیلی */
     color: white;
     padding: 12px;
     border: none;
@@ -148,5 +154,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #3b5a7d;
+    background-color: #739457;
 }
