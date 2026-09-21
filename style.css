@@ -20,9 +20,9 @@ body {
     border-top: 6px solid #4A709C; /* آبی داستی */
 }
 
-/* عنوان اصلی H1 (آبی داستی) */
+/* عنوان اصلی H1 */
 h1.big-text {
-    color: #6A1B29; 
+    color: #4A709C; /* هماهنگ با آبی داستی */
     text-align: center;
     margin-bottom: 5px;
 }
@@ -37,7 +37,7 @@ h1.big-text {
     font-weight: bold;
 }
 
-/* سربرگ‌ها و موضوعات H2 (آبی داستی) */
+/* سربرگ‌ها و موضوعات H2 */
 h2 {
     color: #4A709C; 
     border-bottom: 2px solid #6A1B29; /* شرابی تیره */
@@ -46,14 +46,14 @@ h2 {
     font-size: 1.2rem;
 }
 
-/* پاراگراف‌ها و متن‌های عادی (شرابی تیره) */
+/* پاراگراف‌ها و متن‌های عادی */
 p, li {
     color: #6A1B29;
 }
 
 /* لینک‌ها */
 a {
-    color: #4A709C; /* آبی داستی */
+    color: #4A709C; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -71,7 +71,7 @@ dl {
     border-right: 4px solid #4A709C; 
 }
 
-/* زیرمجموعه‌ها و برچسب‌های مشخصات (شرابی تیره) */
+/* برچسب‌های مشخصات */
 dt {
     font-weight: bold;
     color: #6A1B29; 
@@ -82,6 +82,12 @@ dd {
     color: #6A1B29;
     margin-right: 0;
     margin-bottom: 10px;
+}
+
+/* فقط برای اعداد و شماره تلفنی که کلاس phone-number دارند */
+.phone-number {
+    color: #4A709C; /* آبی داستی */
+    font-weight: bold;
 }
 
 /* جدول تحصیلات */
@@ -98,7 +104,7 @@ table, th, td {
 th, td {
     padding: 10px;
     text-align: right;
-    color: #6A1B29; /* زیرمجموعه‌های جدول شرابی تیره */
+    color: #6A1B29; 
 }
 
 th {
@@ -114,7 +120,7 @@ form {
     margin-top: 15px;
 }
 
-/* برچسب‌های فرم (شرابی تیره) */
+/* برچسب‌های فرم */
 label {
     font-weight: bold;
     font-size: 0.9rem;
@@ -150,5 +156,3 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #3b5a7d;
 }
-
-این کدو ببین
